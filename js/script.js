@@ -45,3 +45,7 @@ document.querySelector('.testimonials').addEventListener('click',()=> {
 document.querySelector('.blog').addEventListener('click',()=> {
     document.querySelector('#blog').scrollIntoView({behavior:'smooth'});
 })
+// contact
+document.querySelector('.contact').addEventListener('click',()=> {
+    document.querySelector('#contact').scrollIntoView({behavior:'smooth'});
+})
