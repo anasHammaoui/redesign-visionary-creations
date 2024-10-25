@@ -5,7 +5,7 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('hidden');
 // hide about services + fix the homepage when click the berger menu
     document.querySelector('.body').classList.toggle('overflow-hidden');
-    document.querySelector('.about').classList.toggle('hidden');
+    document.querySelector('#about-srv').classList.toggle('hidden');
 }
 // intro video
 document.querySelector('.intro').onclick = () => {
