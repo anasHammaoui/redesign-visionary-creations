@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="design,app,web dev,visionary creations">
     <meta name="description" content="  the best startup in the market that has ever been here before">
-    <title>Visionary Creations</title>
+    <title>Sign Up</title>
     <!-- css file -->
     <link rel="stylesheet" href="css/style.css">
     <!-- font awesome -->
@@ -41,28 +41,31 @@
        </nav>
     </header>
 
-    <section class="bg-cover  bg-center"  style="background-image: url('imgs/header.jpg')">     
-        <div class="flex items-center justify-center min-h-screen">
-            <div class="bg-white rounded-lg  p-8 max-w-sm w-full">
-                <h2 class="text-center text-2xl font-bold mb-6">Log in</h2>
-                <form>
+    <section class="bg-cover  bg-center bg-[url('imgs/header.jpg')] flex items-center justify-center min-h-screen relative">     
+          <div class="overlay bg-black opacity-60 absolute top-0 left-0 right-0 bottom-0"></div>
+          <div class="z-10 bg-white md:rounded-lg w-full md:w-auto flex flex-col justify-center items-center p-8  h-screen md:h-auto">
+            <h2 class="text-center text-2xl font-bold mb-1">Create An Account</h2>
+            <p class="text-slate-400 mb-4 text-center">Benefits From Our Awsome Services</p>
+            <form>
+                <div class="mb-4">
+                    <input type="text" id="username" name="username" class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500  sm:text-sm" placeholder="Full Name" required>
+                </div>
+                <div class="mb-6">
+                    <input type="password" id="password" name="password" class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500  sm:text-sm" placeholder="Password" required>
+                </div>
+                <div class="mb-4 flex flex-col md:flex-row gap-2">
                     <div class="mb-4">
-                        <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
-                        <input type="text" id="username" name="username" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+                        <input type="text" id="username" name="username" class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500  sm:text-sm" placeholder="Full Name" required>
                     </div>
                     <div class="mb-6">
-                        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
-                        <input type="password" id="password" name="password" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+                        <input type="password" id="password" name="password" class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500  sm:text-sm" placeholder="Password" required>
                     </div>
-                    <div class="flex  items-center justify-center mb-4">
-                        <a href="#" class="text-sm text-indigo-600 hover:underline">Forgot Password?</a>
-                    </div>
-                    <div class=" flex  justify-center gap-20 ">
-                        <input type="submit"  class="bg-gray-800 text-white py-2 px-4 rounded-2xl shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-800 focus:ring-offset-2" value="Log In">
-                        <a href="signUp.html" class="bg-pink-500 text-white py-2 px-4 rounded-2xl shadow-sm hover:bg-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2">Sign up</a>
-                    </div>
-                </form>
-            </div>
+                </div>
+                <div class="flex flex-col md:flex-row justify-center gap-3 items-center">
+                    <input type="submit"  class="bg-black text-white py-2 px-4 rounded-2xl shadow-sm hover:bg-gray-900 cursor-pointer" value="Sign Up">
+                    <p class="font-light text-sm text-center">Already have an account? <a href="login.html" class="text-blue-600">Sign In</a></p>
+                </div>
+            </form>
         </div>
     </section>
 
